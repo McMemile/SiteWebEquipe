@@ -31,6 +31,10 @@ body {
     box-sizing: border-box;
 }
 
+body * {
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -120,33 +124,6 @@ a {
     line-height: 150%;
 }
 
-.jumbo img{
-    height: 70vh;
-    width: 100%;
-    object-fit: cover;
-}
-
-.jumbo button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    background-color: var(--accent-b);
-    color: var(--accent-a);
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 20px;
-    text-align: center;
-    transition: 0.15s ease-in;
-  }
-  
-.jumbo button:hover {
-    background-color: var(--accent-e);
-    color: var(--accent-b) !important;
-}
 
 .footer {
     color: var(--accent-b);
@@ -175,6 +152,55 @@ input {
 }
 
 
+/* Home */
+
+#home {
+    /*background-size: cover;*/
+    /*background-image: url("assets/chessboard.png");*/
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#chessboard {
+    content: url("assets/chessboard.png")
+}
+
+.jumbo {
+    padding: 2%;
+    margin: auto;
+}
+
+.jumbo img{
+    height: 80vh;
+    width: 80%;
+    object-fit: contain;
+}
+
+/* TODO: Make it like the real chess.com buttons! */
+.jumbo button {
+    position: absolute;
+    top: 71%;  /* centered on chessboard image... might have to move it again if we change things */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: var(--accent-b);
+    color: var(--accent-a);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.15s ease-in;
+  }
+
+.jumbo button:hover {
+    background-color: var(--accent-e);
+    color: var(--accent-b) !important;
+}
+
+
+/* Media links / footer */
 /* position/alignement will depend on other sections */
 #media-links {
     width: 40%;
