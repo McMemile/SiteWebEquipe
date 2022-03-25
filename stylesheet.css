@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-* {
+:root {
     /*variables*/
+    /* --Main-color:
+    --Secondary-color:
+
+    --Background-color: */
+
     --accent-a: #2596be;
     --accent-b: white;
     --accent-c: whitesmoke;
     --accent-d: black;
     --accent-e: #ffbc3a;
+
     --navbar-height: 70px;
     --brand-logo-height: 50px;
-    --navbar-padding: calc(
-            (
-                var(--navbar-height) - var(--brand-logo-height)
-            )
-            /2
-        );
+    --navbar-padding: calc((var(--navbar-height) - var(--brand-logo-height))/2 );
 }
 
 body {
-    /*choses qui devraient tjrs etre dans votre body selon moi */
-    overflow-x: hidden;
+    overflow-x: hidden; /* Mettre scroll bar? */
     margin: 0;
     scroll-behavior: smooth;
     padding: 0;
@@ -40,7 +40,7 @@ a {
     top: 0;
     width: 100%;
     padding: var(--navbar-padding);
-    position: fixed;
+    position: fixed;  /* Use sticky if we want to put something above i.e page Title bar */
     background-color: var(--accent-c);
     opacity: 0.98;
 }
@@ -114,6 +114,7 @@ a {
     align-items: center;
     margin: 10vh 0 10vh 0;
 }
+
 .container > p{
     padding: 40px;
     line-height: 150%;
@@ -153,6 +154,7 @@ a {
     background-color: var(--accent-a);
     text-align: center;
     bottom: 0;
+
     /* position: absolute; */
     height: 30px;
     width: 100%;
