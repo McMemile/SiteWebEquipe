@@ -173,3 +173,60 @@ input {
 #contact {
     padding: 20px;
 }
+
+
+/* position/alignement will depend on other sections */
+#media-links {
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#media-links a {
+    width: 50%;
+    flex: 1 1 10%;
+}
+
+#media-links img {
+    width: inherit;
+}
+
+#android-logo {
+    content: url("assets/android.png")
+}
+#apple-logo {
+    content: url("assets/apple.png")
+}
+#discord-logo {
+    content: url("assets/discord.png")
+}
+#facebook-logo {
+    content: url("assets/facebook.png")
+}
+#instagram-logo {
+    content: url("assets/instagram.png")
+}
+#twitch-logo {
+    content: url("assets/twitch.png")
+}
+#twitter-logo {
+    content: url("assets/twitter.png")
+}
+#youtube-logo {
+    content: url("assets/youtube.png")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
