@@ -197,6 +197,10 @@ img {
     filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5) );
 }
 
+#chessboard{ 
+    filter: drop-shadow(0 0 6px rgba(0,0,0,0.5)); 
+}
+
 /* TODO: Make it like the real chess.com buttons! */
 .jumbo button {
     position: absolute;
