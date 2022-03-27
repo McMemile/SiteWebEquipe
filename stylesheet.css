@@ -119,7 +119,7 @@ a {
     margin: 10vh 0 10vh 0;
 }
 
-.container > p{
+.container > p {
     padding: 40px;
     line-height: 150%;
 }
@@ -166,7 +166,7 @@ li{
 }
 
 #chessboard {
-    content: url("assets/chessboard.png")
+    content: url("assets/chessboard.png");
 }
 
 .jumbo {
@@ -180,33 +180,17 @@ li{
     object-fit: contain;
 }
 
-/* Services */
-#Services img {
-    height: 30vh;
-    width: 90%;
-    object-fit: contain;
-    min-width: 20vw;
-    transition: 1s ease;
-}
-
-#Services img:hover {
-    transform: scale(1.05);
-}
-
-img {    
-    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5) );
+#button {
+    position: absolute;
+    top: 45%;
+    width: 100%;
 }
 
 /* TODO: Make it like the real chess.com buttons! */
 .jumbo button {
-    position: absolute;
-    top: 71%;  /* centered on chessboard image... might have to move it again if we change things */
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: var(--accent-b);
     color: var(--accent-a);
-    font-size: 16px;
+    font-size: 0.6em;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -218,6 +202,47 @@ img {
 .jumbo button:hover {
     background-color: var(--accent-e);
     color: var(--accent-b) !important;
+}
+
+
+/* About */
+.bold {
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#about img {
+
+    float: left;
+    shape-outside: border-box;
+    height: 30vh;
+    width: 30%;
+    object-fit: contain;
+    min-width: 20vw;
+    transition: 1s ease;
+}
+
+
+/* Services */
+#services img {
+    height: 30vh;
+    width: 30%;
+    object-fit: contain;
+    min-width: 20vw;
+    transition: 1s ease;
+}
+
+#Services img:hover, #about img:hover {
+    transform: scale(1.05);
+}
+
+img {    
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5) );
 }
 
 
