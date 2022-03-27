@@ -176,6 +176,14 @@ input {
     object-fit: contain;
 }
 
+/* Services */
+#Services img {
+    height: 30vh;
+    width: 90%;
+    object-fit: contain;
+
+}
+
 /* TODO: Make it like the real chess.com buttons! */
 .jumbo button {
     position: absolute;
