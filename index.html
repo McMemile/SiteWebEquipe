@@ -1,87 +1,202 @@
 <html>
 
 <head>
-    <title>Club Penguin</title>
+    <title>Chess</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
+<!-- To keep track of what classes we use in order to avoid duplication, please write it here:
+
+.navbar
+.dropdown
+.jumbo
+.container
+
+.raw_link   // not for nav bar, just a plain link in text
+.contact-button  // applied on <a> elements, usually containing an image
+
+
+-->
+
+
 <body>
-    <div class="navbar">
-        <ul>
-            <li>
-                <img src="assets/logo.png" alt="logo">
-            </li>
-            <li>
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li class="dropdown">
-                <a href="#services">Nos services <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                  </svg></a>
-                <div class="dropdown-content">
-                    <a href="#services">Service 1</a>
-                    <a href="#services">Service 2</a>
-                    <a href="#services">Service 3</a>
-                </div>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-    <div class="jumbo" id="home">
-        <img src="assets/club1.png">
-            <a href="#">
-                <button type="button" >
-                    <h2>Acheter!</h2>
+<!-- <div class="navbar">
+    <ul>
+        <li>
+            <img src="assets/logo.png" alt="logo">
+        </li>
+        <li>
+            <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#about">About</a>
+        </li>
+        <li class="dropdown">
+            <a href="#services">Nos services <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg></a>
+            <div class="dropdown-content">
+                <a href="#services">Service 1</a>
+                <a href="#services">Service 2</a>
+                <a href="#services">Service 3</a>
+            </div>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+    </ul>
+</div> -->
+
+
+<div class="jumbo" id="home">
+    <h1>Ever heard of <a href="https://www.chess.com/" class="raw_link">Chess.com?</a></h1>
+
+    <p> We are the best platform for playing chess online, with over 10 million games played everyday!
+        You will meet an engaging community of players from all ranks! <br/>
+
+        Our platform encourages players to learn more about chess, we provide learning tools such as tutorials
+        and puzzles to solve.<br/>
+
+        Chess.com feels like home! we bring you the daily news of the world of chess and an engaging community
+        so you never feel alone &#128522;
+    </p>
+
+    <!--  Big mess to center the button the image  -->
+    <div style="position:relative">
+        <img id="chessboard"/>
+
+        <div id="button">
+            <a href="https://www.chess.com/play">
+                <button type="button">
+                    <h2>Come Play Some Chess!</h2>
                 </button>
             </a>
-        </span>
+        </div>
     </div>
-    <div class="container" id="about">
-        <h2>Club Penguin!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget <img src="assets/logo.png" alt="logo" style="float: left; width: 300px;">consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, <b>nisl nunc ultrices eros</b>, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu <b>porttitor nisl nunc</b> eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus.
+</div>
+
+
+<div class="container" id="about">
+    <h2>About us</h2>
+
+    <p><span class="bold">We are the #1 chest community.</span><img src="assets/logo.png" alt="logo"/>
+        Back in 2005, me and my friend Jay decided the world needed a better chess website.
+        There were places to play online, but none of them felt like home. We imagined a site where people could build
+        their chess home online and all in one place: to play in a safe and friendly environment, find friends, save
+        their games, tell their chess stories, share ideas, and learn from each other.
+        was mid-way through a graduate degree at Stanford and all of my classmates were taking jobs in finance or hot
+        tech companies. But I turned down job offers (including Facebook!) to follow the dream of building the greatest
+        chess site the world had ever seen. And I convinced Jay’s wife to let him join me! Luckily enough, we found out
+        that “chess.com” was coming available in a bankruptcy auction, and we bought the name.
         <br><br>
-        Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam euismod, nisl eget consectetur tempor, nisl nunc ultrices eros, eu porttitor nisl nunc eget purus. Nullam eu
-        </p>
+        Over the next several years, Jay and I poured our life savings, our hearts, and most of our waking hours into
+        building Chess.com. But we never imagined what it is today!
+    </p>
+    <ul> <!--J'ai un problème où la liste ne veut pas se placer à côter du logo... -->
+        <li><span class="bold">Over ten million chess games every day.</span></li>
+        <li>More than <span class="bold">200 employes</span> across 35 countries!</li>
+        <li>Supports <span class="bold">more than 50 world class chess players, coaches, and professionals</span> by
+            paying them to create awesome content.
+        </li>
+    </ul>
+</div>
+
+<!-- Maybe put links to different sections: play/puzzles/learn/etc... -->
+<div class="container" id="services">
+    <h2>Our services</h2>
+    <div>
+        <a aria-label="Chess league"
+           href="https://www.chess.com/leagues">
+            <img src="assets/chessleague.png" alt="logo">
+        </a>
+        <a aria-label="Titled tuesday"
+           href="https://www.chess.com/tournament/live/titled-tuesdays">
+            <img src="assets/titledtuesday.png" alt="logo">
+        </a>
+        <a aria-label="Chesskid"
+           href="https://www.chesskid.com/">
+            <img src="assets/chesskid.png" alt="logo">
+        </a>
+    </div>
+    <p>Chess.com offers a wide array of ways to enjoy chess. Online matchmaking, tournaments, puzzles, news as well as
+        multiple ways to learn and sharpen up your skills.
+        <br><br>
+        Simply put, Chess.com is <span class="italic">the</span> hub for anything chess. </p>
+</div>
+
+
+<div class="container" id="Nous-contacter">
+    <h2>Contact us</h2>
+    <form action="https://www.w3schools.com/action_page.php">
+        <label for="nom">Votre nom:</label><br>
+        <input type="text" id="nom" name="name" value=""><br><br><br>
+        <label for="email">Courriel:</label><br>
+        <input type="email" id="email" name="email"> <br><br><br>
+        <label for="email">Votre message:</label><br>
+        <textarea rows="4" cols="50" name="comment"></textarea>
+        <br><br>
+        <input type="submit" value="Envoyer">
+    </form>
+
+    <!-- Liens divers, media sociaux, appstores; ira possiblement en footer -->
+    <div class="container" id="media-links">
+        <a aria-label="App for iOS / iPhone / iPad"
+           class="contact-button"
+           href="https://www.chess.com/play/apps/ios">
+            <img id="apple-logo"/>
+        </a>
+
+        <a aria-label="App for Android"
+           class="contact-button"
+           href="https://www.chess.com/play/apps/android">
+            <img id="android-logo"/>
+        </a>
+
+        <a aria-label="Facebook"
+           class="contact-button"
+           href="https://www.facebook.com/chess">
+            <img id="facebook-logo">
+        </a>
+
+        <a aria-label="Twitter"
+           class="contact-button"
+           href="https://twitter.com/chesscom">
+            <img id="twitter-logo"/>
+        </a>
+
+        <a aria-label="Youtube"
+           class="contact-button"
+           href="https://www.youtube.com/user/wwwChesscom">
+            <img id="youtube-logo"/>
+        </a>
+
+        <a aria-label="Twitch"
+           class="contact-button"
+           href="https://www.twitch.tv/chess">
+            <img id="twitch-logo">
+        </a>
+
+        <a aria-label="Instagram"
+           class="contact-button"
+           href="https://www.instagram.com/wwwchesscom">
+            <img id="instagram-logo"/>
+        </a>
+
+        <a aria-label="Discord"
+           class="contact-button"
+           href="https://discord.gg/3VbUQME">
+            <img id="discord-logo"/>
+        </a>
 
     </div>
-    <div class="container" id="services">
-        <h2>Nos services</h2>
-        <div style="display: block;">
-        <img src="assets/Black_on_a_Player_Card.webp" alt="logo" style="float: left; width: 300px;">
-        
-        <img src="assets/logo.png" alt="logo" style="float: left; width: 300px;">
+</div>
 
-        <img src="assets/clubpenguin-clop.gif" alt="logo" style="float: left; width: 300px;">
-        
-        
-    </div>
 
-    <div class="container" id="contact">
-        <h2>Nous contacter</h2>
-        <form action="https://www.w3schools.com/action_page.php">
-            <label for="nom">Votre nom:</label><br>
-            <input type="text" id="nom" name="name"  value=""><br><br><br>
-            <label for="email">Courriel:</label><br>
-            <input type="email" id="email" name="email" > <br><br><br>
-            <label for="email">Votre message:</label><br>
-            <textarea rows="4" cols="50" name="comment" ></textarea>
-            <br><br>
-            <input type="submit" value="Envoyer">
-          </form> 
-          
-          
-        
-    </div>
+<!-- <div class="footer">
+        <p>&copy; IFT1005 2022</p>
+</div> -->
 
-    </div>
-    <div class="footer">
-            <p>&copy; IFT1005 2022</p>
-    </div>
+
 </body>
 
 </html>
