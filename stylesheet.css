@@ -181,8 +181,9 @@ input {
     height: 30vh;
     width: 90%;
     object-fit: contain;
-
+    min-width: 20vw;
 }
+
 
 /* TODO: Make it like the real chess.com buttons! */
 .jumbo button {
