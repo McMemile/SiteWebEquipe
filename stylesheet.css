@@ -20,6 +20,7 @@
     --navbar-padding: calc((var(--navbar-height) - var(--brand-logo-height))/2 );
 }
 
+/* general */
 body {
     overflow-x: hidden; /* Mettre scroll bar? */
     margin: 0;
@@ -42,59 +43,113 @@ a {
     color: inherit;
 }
 
+img {
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5) );
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh 0 10vh 0;
+}
+
+.container > p {
+    padding: 40px;
+    line-height: 150%;
+}
+
+input {
+    width: 100%;
+}
+
+.container h2 {
+    color: var(--accent-a);
+    font-weight: 600;
+}
+
+#contact {
+    padding: 20px;
+}
+
+li{
+    margin: 20px 0;
+}
+
+
+
+/* navbar */
+
 .navbar {
     top: 0;
     width: 100%;
     padding: var(--navbar-padding);
     position: fixed;  /* Use sticky if we want to put something above i.e page Title bar */
     background-color: var(--accent-chess-background);
+
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+    z-index: 1;  /* Show above all other elements */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
 }
 
-.navbar li {
-    float: left;
+
+.navbar * {
+    flex: 1 1 auto;
     margin-left: 5px;
 }
 
-.navbar li a {
+.navbar a {
+
     display: block;
+
+    text-align: center;
+    font-size: max(1em, 2.5vw);
     padding: 15px;
     transition: 0.5s;
     background-color: var(--accent-c);
     border-radius: 25px;
 }
 
-.navbar li a:hover {
-    display: block;
-    padding: 15px;
+
+.navbar a:hover {
     background-color: var(--accent-chess);
     color: var(--accent-c);
-    border-radius: 25px;
 }
 
-.navbar li img {
-    width: auto;
+.navbar img {
+    flex: 0 0 auto !important;
     height: var(--brand-logo-height);
-    margin: 0 20px 0 20px;
+    margin: 0 min(20px, 1vh);
 }
+
+.dropdown {
+    margin: 0;
+}
+
 
 /* source: w3schools */
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+
+    display: none;
     position: absolute;
     background-color: var(--accent-c);
     min-width: 160px;
     z-index: 1;
     border-radius: 25px;
+
     transform-origin: top center;
     transform: rotateX(90deg);
     transition: 0.2s ease-out;
+
 }
 
 /* Links inside the dropdown */
@@ -237,6 +292,8 @@ li{
     width: 30%;
     object-fit: contain;
     min-width: 20vw;
+    transition: 1s ease;
+
 }
 
 
@@ -244,7 +301,9 @@ li{
 #services img {
     height: 30vh;
     width: 30%;
+
     object-fit: scale-down;
+
     min-width: 20vw;
     transition: 1s ease;
 }
@@ -258,24 +317,60 @@ img {
 }
 
 
+
 /* Media links / footer */
 /* position/alignement will depend on other sections */
-#media-links {
-    width: 40%;
+
+.footer {
+    position: fixed;
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
     justify-content: center;
+
+
+    color: var(--accent-b);
+    padding: min(1vh, 1vw);
     background-color: var(--accent-chess-background);
+    /*text-align: center;*/
+    bottom: 0;
+
+    height: min(7vw, 7vh);
+    width: 100%;
+    margin: 0;
+}
+
+
+.footer img {
+    margin-left: min(1vw, 1vh);
+    height: min(5vw, 5vh);
+}
+
+#copyright {
+    /*padding: 0;*/
+    /*margin: auto;*/
+    font-size: min(2vw, 2vh);
+    position: absolute;
+    left: 5%;
+}
+
+#media-links {
+    display: flex;
+    flex-flow: row nowrap;
+
+    background-color: inherit;
+    position: absolute;
+    right: 5%;
 }
 
 #media-links a {
-    width: 50%;
-    flex: 1 1 10%;
+    /*width: 80%;*/
+    /*flex-grow: 1;*/
+    /*flex-shrink: 1;*/
 }
 
 #media-links img {
-    width: inherit;
+    /*width: inherit;*/
 }
 
 #android-logo {
