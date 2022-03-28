@@ -49,7 +49,6 @@ img {
 
 .container {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,41 +90,44 @@ li{
     background-color: var(--accent-chess-background);
 
     z-index: 1;  /* Show above all other elements */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.navbar li {
-    float: left;
+.navbar * {
+    flex: 1 1 auto;
     margin-left: 5px;
 }
 
-.navbar li a {
+.navbar a {
+
     display: block;
+    text-align: center;
+    font-size: max(1em, 2.5vw);
     padding: 15px;
     transition: 0.5s;
     background-color: var(--accent-c);
     border-radius: 25px;
 }
 
-.navbar li a:hover {
-    display: block;
-    padding: 15px;
+.navbar a:hover {
     background-color: var(--accent-chess);
     color: var(--accent-c);
-    border-radius: 25px;
 }
 
-.navbar li img {
-    width: auto;
+.navbar img {
+    flex: 0 0 auto !important;
     height: var(--brand-logo-height);
-    margin: 0 20px 0 20px;
+    margin: 0 min(20px, 1vh);
 }
+
+.dropdown {
+    margin: 0;
+}
+
 
 /* source: w3schools */
 /* Dropdown Content (Hidden by Default) */
